@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "browserify": "^16.2.0",
+    "exorcist": "^1.0.1"
+  },
+  "scripts": {
+    "build": "babel --source-maps inline src/react.js -o lib/react.babel.js && browserify --debug lib/react.babel.js | exorcist lib/react.browserify.js.map > lib/react.browserify.js -e --root \"file:///<current working directory>\" --url \"file:///<current working directory>/lib\/react.browserify.js.map\""
+  },
+  "name": "sourcemap_debugging_example_with_react_babel_and_browserify",
+  "version": "1.0.0",
+  "main": "react.js",
+  "author": "CoughBall",
+  "license": "ISC",
+  "description": ""
+}
