@@ -3,7 +3,7 @@
 ### preface
 As I couldn't find even 1 example (which is weird) of debugging using sourcemaps locally on your pc with windows OS without using a local server, I decided to publish this small example for people to use in case of need. this example is using part of the official facebook react tutorial and babel with browserify and configured for debugging with sourcemaps the source javascript file.
 
-This example was tested with visual studio code with chrome and firefox debug extensions
+This example was tested on visual studio code with chrome and firefox debug extensions
 
 ### instructions
 After installing all the dependencies make sure to change "\<current working directory\>" in the package.json to the directory you are working on and then execute "npm run build"
